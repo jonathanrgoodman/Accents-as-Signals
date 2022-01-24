@@ -1,0 +1,154 @@
+Age,Gender,Birthplace,Raised,Accent,Familiarity.British,Familiarity.American,Native.Language,L21,L22,L23,L24,L25,L2.Age,Actor,Actor.time,Education,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Sum
+32,Male,"Leeds, UK","Leeds, UK","Neutral, Yorkshire twang",Extensive,Moderate,English,"French, 1",NA,NA,NA,NA,10,No,NA,Bachelor's degree,1,1,1,0,1,0,NA,1,1,NA,1,0,7
+35,Male,"Middlesbrough, United Kingdom","Middlesbrough, United Kingdom",Teesside/North-east English,Extensive,Limited,English,"Spanish, 5","German, 3","French, 1",NA,NA,11,No,NA,Master's degree,0,NA,1,1,1,NA,0,1,1,1,1,0,7
+57,Female,"Dublin, Ireland","Dublin, Ireland",Irish,Moderate,Limited,English,"German, 5","French, 3","Russian, 3","Danish, 3","Irish, 2",4,No,NA,Doctoral degree,1,NA,1,0,1,0,0,1,1,1,1,NA,7
+62,Female,"Colchester, UK","Manningtree, UK",English,Extensive,Limited,English,Russian 4,French 2,NA,NA,NA,12,No,NA,Doctoral degree,1,1,0,0,0,0,0,NA,1,1,0,NA,4
+51,m,"Houston, Texas, USA",Houston (0-10) and Chicago (10-21),Chicago but (i) with a few residual Houston features and (ii) without most of the Northern Cities vowel Shift,Moderate,Extensive,English,"Armenian, 3","French, 2","Spanish, 2","German, 2",NA,9,No,NA,Doctoral degree,1,1,0,1,1,0,NA,1,1,0,NA,1,7
+24,Male,"Hong Kong, Hong Kong","Hong Kong, London",London,Moderate,Limited,English,"French, 2",NA,NA,NA,NA,12,No,NA,Master's degree,1,1,NA,0,1,0,0,0,0,0,NA,1,4
+27,Female,"Kaunas, Lithuania","Kaunas, Lithuania",NA,Limited,Limited,Lithuanian,"Italian, 4","French, 4","Russian, 3","Portuguese, 2","Spanish, 1",6,No,NA,Master's degree,1,0,1,NA,1,1,1,1,1,1,1,NA,9
+50,female,"Yeovil, England","Yeovil, England",standard southern English,Moderate,Moderate,English,"French, 5","German, 5","Italian, 2","Spanish, 1","Hungarian, 1",11,No,NA,Master's degree,0,1,0,0,1,1,1,1,NA,1,NA,1,7
+25,Male,"Colchester, UK",Ipswich,RP,Extensive,Limited,English,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,1,0,1,0,0,1,NA,1,0,NA,1,6
+33,Male,"London, UK","London, UK",English,Moderate,Negligible,English,"Chinese, 2",NA,NA,NA,NA,11,No,NA,Bachelor's degree,NA,1,1,0,0,0,0,1,1,1,0,NA,5
+49,M,"Leicester, UK","Cambridge, UK",East Midlands,Moderate,Limited,English,"Hebrew, 5","French, 3","German, 3","Arabic, 1","Russian, 1",11,No,NA,Doctoral degree,1,1,NA,1,NA,0,0,1,1,0,0,1,6
+32,Female,"North Shields, UK","North Shields, UK",Geordie,Extensive,Limited,English,"Japanese, 2",NA,NA,NA,NA,17,No,NA,Bachelor's degree,1,1,0,NA,1,1,1,1,NA,1,1,1,9
+23,Female,"Karachi, Pakistan","Karachi, Pakistan",Pakistani,Moderate,Limited,English,"Urdu, 5",NA,NA,NA,NA,NA,No,NA,Master's degree,0,0,NA,1,1,NA,1,0,1,0,1,0,5
+31,Female,"Thessaloniki, Greece","Thessaloniki, Greece",Standard southern British,Moderate,Limited,"English, Greek, German","English, 5","Greek, 5","German, 5","Turkish, 1",NA,6,No,NA,Doctoral degree,1,0,1,1,1,0,0,1,1,NA,NA,0,6
+25,woman,"Nieuwegein, the Netherlands","Nieuwegein, the Netherlands; Singapore; Woking, UK; Munich, Germany",(Southern) English,Moderate,Limited,English,Dutch - 5,German - 4,French - 1,NA,NA,6,No,NA,Some graduate school,0,1,0,1,NA,1,0,0,0,1,1,NA,5
+23,Female ,"New York City, USA","USA, France, UK",RP,Extensive,Extensive,English,"French, 5","German, 4","Spanish, 3","Mandarin Chinese, 1",NA,10,No,NA,Master's degree,0,0,1,0,1,NA,0,1,1,NA,0,0,4
+23,Male,"New Brunswick, New Jersey, USA","Hasbrouck Heights, New Jersey, USA","Transatlantic; General American base, with limited New York City metropolitan area regional features; British (SSBE)-influenced shifts in usage (especially lexical, but also prosodic) from ages 17-21 at university; (Dublin) Irish-English influence from ages 21 to present following move to Dublin with notable social/cultural integration and pre-existing family ties",Moderate,Moderate,American English,"Irish (Gaelic), 5","Spanish, 4","French, 3","Greek (Modern), 3",NA,13,No,N/A,Master's degree,1,0,0,NA,1,1,1,1,1,0,0,NA,6
+31,Female,United Kingdom,"Nuneaton, Rugby, both UK",Neutral/slight midlands ,Moderate,Limited,English,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,NA,NA,0,1,0,1,1,1,1,1,0,7
+32,Female ,"Leeds, United Kingdom ","Leeds, United Kingdom ",Mild northern,Extensive,Moderate,English ,NA,NA,NA,NA,NA,NA,Yes,3,Master's degree,1,1,1,1,1,NA,NA,1,1,0,1,1,9
+69,Female,"Rochester, New York","Detroit, Michigan",Standard American,Limited,Extensive,English,"Hebrew, 4","French, 1",NA,NA,NA,27,No,NA,Doctoral degree,0,1,NA,0,0,NA,1,1,1,1,1,1,7
+42,female,"London, England","Cambridge, England",British RP (southern),Moderate,Moderate,English,Italian 4,French 3,NA,NA,NA,10,No,NA,Doctoral degree,1,1,1,1,1,1,1,NA,NA,1,1,1,10
+44,Female,"Budapest, Hungary","Budapest, Hungary",English as a Second Language,Limited,Limited,Hungarian,"Spanish, 4","Catalan, 4","French, 2","Greek, 1",NA,8,No,NA,Master's degree,1,1,0,0,1,0,0,1,NA,NA,1,0,5
+44,female,"Zenica, Bosnia & Herzegovina","Novi Sad, Serbia",eastern european,Moderate,Limited,Serbian,"English, 5",NA,NA,NA,NA,10,No,NA,Doctoral degree,1,0,1,0,NA,NA,0,1,1,0,1,0,5
+31,Woman,"Paris, France","Paris, France",Mild French accent,Limited,Moderate,French,"English, 5","Italian, 4","Spanish, 3","German, 1",NA,8,No,NA,Master's degree,1,1,0,1,1,NA,1,NA,1,1,1,0,8
+23,female,"Berlin, Germany","Berlin, Germany",NA,Limited,Limited,German,"English, 5","Spanish, 3.5 ","French, 2","Dutch, 1",NA,8,No,NA,Bachelor's degree,0,0,NA,1,0,0,0,1,NA,0,0,0,2
+57,Female,"Singapore, Singapore","Sheffield, UK",Received pronunciation,Moderate,Negligible,Englsih,"French, 1",NA,NA,NA,NA,10,No,NA,Bachelor's degree,1,1,0,0,NA,NA,1,1,1,0,1,1,7
+63,female,"London, England","London, England",RP,Moderate,Limited,English,"French, 4. Russian, 3. Hebrew, 5.",NA,NA,NA,NA,8,No,NA,Master's degree,1,1,0,NA,1,0,0,1,1,1,NA,0,6
+28,Male,"Rotterdam, Netherlands","Apeldoorn, Netherlands",Dutch/International School English,Moderate,Moderate,Dutch,"English, 5","Japanese, 5","French, 5","Portuguese, 3 ","German; Spanish, 2",11,No,NA,Master's degree,0,0,0,1,NA,1,NA,1,1,0,1,1,6
+29,female,"ipswich, england","oxford, england
+milton keynes, england",east anglian,Moderate,Limited,english,"german, 3","korean, 2",NA,NA,NA,NA,No,NA,Master's degree,NA,1,1,1,1,1,1,0,1,1,0,NA,8
+32,Female,"London, UK","London, UK",RP,Extensive,Moderate,English ,"French, 2","Spanish, 1",NA,NA,NA,8,No,NA,Master's degree,1,1,1,0,1,1,NA,1,NA,1,1,0,8
+21,Male,London UK,London ,North London ,Limited,Limited,English ,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,0,0,0,1,NA,0,1,1,NA,1,1,6
+30,Male,24/05/90,London,RP,Moderate,Limited,English,"French, 2",NA,NA,NA,NA,French at 11,No,NA,Bachelor's degree,1,0,0,1,1,0,1,0,NA,0,NA,0,4
+29,Male,"Croydon, England","Croydon, England","English, well spoken London accent",Moderate,Limited,English,Turkish 3,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,0,1,1,0,1,1,0,NA,NA,1,0,0,5
+29,Female,"Doncaster, UK","Doncaster, UK","Faintly South Yorkshire English, mostly having lived in southern UK/abroad for 10 years",Extensive,Moderate,English,"Japanese, 5","Mandarin, 3 (Taiwanese)","French, 3 (Continental)","German, 3",NA,10,No,NA,Master's degree,1,0,NA,NA,1,1,0,1,0,0,0,0,4
+31,Female,"London, UK","London, UK",London,Extensive,Limited,English,"Italian, 5","French, 3","Spanish, 1",NA,NA,10,No,NA,Master's degree,1,1,NA,1,0,0,0,1,NA,1,0,1,6
+36,male,london,london uk,london,Moderate,Limited,english,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,0,1,0,0,1,0,0,NA,1,1,NA,0,4
+35,Male,"Norwich, UK","Norwich, UK,
+Leeds, UK,
+Kendal, UK,
+Chorley, UK
+Wigan, UK",Northern (north west),Extensive,Moderate,English ,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,0,0,0,1,0,0,1,1,1,0,1,6
+24,Female,"Sydney, Australia",Australia,Australian,Moderate,Limited,Vietnamese,"Vietnamese, 5","English, 5","French, 5","German, 2","Spanish, 2",12,No,NA,Bachelor's degree,1,0,1,0,1,1,0,0,1,0,1,1,7
+23,male,London,London,Estuary English,Moderate,Limited,English,German 3/4,Italian 2/3,Spanish 2,Swedish 1,Russian 1,13,No,NA,Master's degree,1,0,1,0,1,0,0,1,1,0,1,0,6
+31,Male,"Pampanga, Philippines","London, UK",Londoner,Extensive,Moderate,English,"Kapampangan,3",NA,NA,NA,NA,NA,No,NA,Bachelor's degree,0,1,0,1,1,0,0,1,0,0,0,0,4
+30,Male,"Berkeley, USA","Berkeley, USA","Californian, American",Limited,Moderate,English,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,0,0,1,1,0,1,0,1,1,1,1,8
+59,female,London England,London England,London,Extensive,Limited,English,"Spanish, 3",NA,NA,NA,NA,14,No,NA,Doctoral degree,0,0,0,1,1,0,0,1,1,0,1,1,6
+27,Female,"Toronto, Canada","Toronto, Canada",Canadian,Moderate,Extensive,English,"French, 2",NA,NA,NA,NA,6,No,NA,Doctoral degree,1,0,0,1,1,1,1,1,1,0,1,0,8
+29,Female,UK,London,British,Moderate,Limited,English ,NA,NA,NA,NA,NA,NA,Yes,2,Bachelor's degree,1,1,1,0,1,1,0,1,0,1,1,0,8
+22,Male,"Folkestone, United Kingdom","Folkestone, United Kingdom, Inverness, United Kingdom, Glasgow, United Kingdom",Southeastern,Extensive,Limited,English,"French, 3",NA,NA,NA,NA,12,No,NA,Master's degree,1,1,1,0,1,0,1,1,1,1,1,1,10
+30,Male,"Grantham, United Kingdom","Lincoln, United Kingdom",Midlands ,Extensive,Moderate,English,"Spanish, 4","French, 3","Portuguese, 3","German, 2","Japanese, 1","French, 12",No,NA,Bachelor's degree,1,1,0,1,1,1,1,1,1,0,1,1,10
+33,Female ,Winnipeg Canada ,Winnipeg Canada ,Canadian ,Negligible,Moderate,English ,"French, 2 ",NA,NA,NA,NA,6,No,NA,Doctoral degree,1,1,0,1,1,0,1,1,1,1,1,0,9
+48,Male,"Orange, California, USA","Tempe, Arizona; London, England",midatlantic,Extensive,Extensive,English,German 5,French 3,Spanish 3,NA,NA,14,No,NA,Some graduate school,1,1,0,0,1,0,1,1,0,1,1,0,7
+26,Female,"Raleigh, United States",NA,American,Moderate,Extensive,English,"Turkish, 3","Spanish, 2",NA,NA,NA,1,No,NA,Master's degree,1,0,0,1,0,1,0,0,1,1,1,0,6
+48,male,"Athens, Greece","Athens, Greece",greek,Moderate,Extensive,greek,greek 5,english 5,french 3,NA,NA,6,No,NA,Doctoral degree,1,0,1,1,1,1,0,1,1,1,1,0,9
+36,Female,London,"London; Aspley Guise, Bedfordshire; Oxford, Oxfordshire",Oxford,Moderate,Limited,English,"Spanish, 5",NA,NA,NA,NA,11 (French),No,NA,Master's degree,1,1,0,1,1,0,0,0,1,1,0,1,7
+25,Female,"Guelph, Canada","Toronto, Canada",Canadian,Limited,Moderate,English,English = 5,Tamil = 4,French =1,NA,NA,"French, 10 years",No,NA,Some graduate school,0,0,1,1,1,1,1,0,1,0,0,1,7
+24,Female,"Dalby, Australia","Dalby, Australia",Australian,Moderate,Moderate,English,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,1,0,1,1,1,1,0,1,0,0,1,8
+26,Female,"Leverkusen, Germany","Kelkheim, Germany",English,Moderate,Limited,German,English = 5,NA,NA,NA,NA,NA,No,NA,Master's degree,0,0,1,1,0,1,0,1,1,0,1,1,7
+28,Woman,Paris，France,"Shanghai, China",Mix,Limited,Limited,Mandarin,"French, 5","English, 5","German, 3","Russian, 2",NA,6,No,NA,Master's degree,0,1,0,1,1,0,1,1,1,1,1,0,8
+19,Female,Huntingdon - United Kingdom,"Bedford, Cambridge - United Kingdom",SSBE,Moderate,Limited,English ,"French, 3",NA,NA,NA,NA,8,No,NA,High school diploma (or equivalent),0,1,1,1,1,1,1,1,1,1,0,1,10
+29,Female,"Chelmsford, UK","Market Rasen, Lincs, UK","Mixed, with northern 'a's and 'u's ",Extensive,Extensive,English,"French, 1","Spanish, 3",NA,NA,NA,11,No,NA,Master's degree,1,1,0,1,1,0,0,1,0,1,1,0,7
+32,Male,"Los Angeles, California, USA ","Seattle, WA, USA",American,Moderate,Moderate,Englisg,"Spanish, 1",NA,NA,NA,NA,13,No,NA,Bachelor's degree,1,1,0,1,1,0,1,1,1,1,1,0,9
+40,male,Brescia (Italy),Brescia (Italy),italian,Moderate,Negligible,Italian,"english, 5","Spanish, 2","French, 1",Brescian ,NA,12,No,NA,Doctoral degree,0,0,1,1,1,0,0,1,0,1,1,0,6
+27,Female,"Moscow, Russia","Moscow region, Russia",Russian,Limited,Limited,Russian,"English, 5","French, 5","Spanish, 4",NA,NA,6,No,NA,Master's degree,1,1,0,0,1,1,0,1,1,1,1,1,9
+27,FEMALE,"SHEFFIELD, UK","SHEFFIELD, UK","RP/SSBE WITH SOME NORTHERN VOWELS eg in ""grass""",Extensive,Moderate,ENGLISH,"FRENCH, 4","SPANISH, 2",NA,NA,NA,11,Yes,"10 YEARS, WEEKLY DRAMA LESSONS INCLUDING SOME ACCENT TRAINING WITHIN IT AS CHILD",Master's degree,1,1,0,1,1,1,1,1,1,1,1,0,10
+26,Male,"Janesville, WI, USA","Janesville, WI, USA",Midwest American,Moderate,Extensive,English,NA,NA,NA,NA,NA,NA,No,NA,Master's degree,1,1,0,0,1,1,0,1,0,1,0,1,7
+21,Male,UK (England)1,Kings Lynn,English,Moderate,Moderate,English,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,1,0,1,1,0,0,1,0,1,1,1,8
+22,female,"Krakow, Poland","Krakow, Poland",mixed,Moderate,Limited,Polish,"English, 5","Swedish, 3","Icelandic, 2",NA,NA,5,No,NA,Master's degree,NA,NA,NA,0,NA,NA,0,NA,0,NA,1,NA,1
+36,Male,"Dublin, Ireland","Dundalk, Ireland",Irish,Extensive,Moderate,English,"Irish, 2","Italian, 1","French, 1","German, 1",NA,Irish at 4. German at 15,No,NA,Master's degree,1,1,0,1,1,0,1,0,1,0,1,0,7
+27,Female,"San Mateo, California, USA","Half Moon Bay, California, USA",West coast American,Limited,Moderate,English,"Italian, 2","Spanish, 2",NA,NA,NA,13,No,NA,Master's degree,1,0,1,0,0,0,0,1,0,1,1,0,5
+27,Male,"Seattle, USA","Seattle, USA",American,Extensive,Extensive,English,"Japanese, 4",NA,NA,NA,NA,10,No,NA,Master's degree,1,1,1,0,1,0,1,1,1,1,1,0,9
+36,Male,"Dublin, Ireland","Kildare, Ireland",Irish,Moderate,Moderate,Hiberno-English,"Irish, 1","Portuguese, 3","French, 3",NA,NA,5,No,NA,Master's degree,0,1,0,1,1,1,1,1,0,0,1,0,7
+25,Female,"London, UK",Spain,English,Moderate,Limited,Spanish,Spanish 5,English 5,French 3,German 2,NA,NA,No,NA,Bachelor's degree,1,0,0,1,1,1,1,0,1,1,1,0,8
+29,Male,"Gulfport, Mississippi, United States of America","Long Beach, Mississippi, United States of America",American,Limited,Moderate,English,"French, 5",NA,NA,NA,NA,18,No,NA,Bachelor's degree,1,0,0,1,0,0,1,1,1,1,1,1,8
+27,Female,"New York, NY - United States of America","New York, NY - United States of America",American,Limited,Extensive,English,French - 4,NA,NA,NA,NA,10 years old,No,NA,Bachelor's degree,0,1,1,1,1,1,0,1,1,0,0,0,7
+33,Female,"New York, USA","New York, USA",Mid-Atlantic American,Moderate,Extensive,French,"French, 5","Spanish, 2","Italian, 1",NA,NA,9,No,NA,Master's degree,1,0,0,0,1,1,1,1,1,1,0,0,7
+38,Male,"sidcup, england","bristol, england",genric RP,Extensive,Extensive,english,"French, 1","German, 1",NA,NA,NA,12,No,NA,Master's degree,1,1,0,0,1,0,1,0,0,0,0,0,4
+40,Female,"London, UK",London. UK,Southern / London,Extensive,Moderate,English,"English, 5","French, 3","Spanish, 1",NA,NA,NA,Yes,2,Bachelor's degree,1,1,1,0,1,0,0,1,1,1,1,0,8
+39,Female,"Tiverton, UK","Llangeitho (Wales), West Buckland (England)",Neutral British (no particular accent),Moderate,Limited,English,"Welsh, 2","French, 3","Spanish, 2",NA,NA,"Welsh, started learning when I was 6 years old",No,NA,Bachelor's degree,1,1,1,1,0,1,1,0,1,0,0,1,8
+29,Male,"London, United Kingdom",London. Brixton and Dagenham,British,Moderate,Moderate,English,"Yoruba, 3",NA,NA,NA,NA,NA,No,NA,Bachelor's degree,0,1,1,1,1,0,1,1,1,0,0,0,7
+38,Male,"Sebha, Libya","Tehran, Damascus, London",Ethnic London ,Limited,Negligible,Arabic ,"English, 5","Farsi, 3","Albanian, 1","Greek, 1",NA,4,No,NA,Master's degree,1,1,0,1,0,1,1,1,0,0,1,1,8
+26,Female,"La Coronada, Spain","La Coronada, Spain",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1,1,0,0,1,0,1,1,1,0,1,8
+39,male,"Lincoln, England","Gainsborough, England",Lincolnshire,Extensive,Extensive,English,NA,NA,NA,NA,NA,NA,No,NA,Master's degree,0,1,1,0,1,0,1,1,1,0,0,1,7
+37,Male,"Gettysburg, PA, USA","Gettsyburg PA, Columbus OH, Fort Bragg NC, Fort Thomas KY, Lexington KY, Cincinnati OH, New York NY - All USA",American,Limited,Moderate,English,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,0,1,1,1,1,1,1,1,1,0,1,10
+35,Male,Dundalk Ireland,Dundalk ireland,Dundalk,Extensive,Extensive,English,NA,NA,NA,NA,NA,NA,No,NA,High school diploma (or equivalent),0,1,1,1,1,0,1,1,1,1,0,0,8
+26,Female,Peterborough UK,"Stamford, Grantham, Sleaford ",Midlands,Limited,Limited,English,1 German,NA,NA,NA,NA,12,No,NA,Bachelor's degree,1,1,0,0,1,1,1,1,1,0,1,1,9
+32,Female,"Long Beach, California, USA","Fullerton, California, USA",American,Moderate,Extensive,English,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,1,1,0,1,1,1,1,1,1,1,1,0,10
+49,Male,"Dundalk, Ireland","Dundalk, Ireland",Irish,Moderate,Limited,English,NA,NA,NA,NA,NA,NA,No,NA,Bachelor's degree,0,1,0,1,1,1,0,1,1,1,1,1,9
+74,Female,"New York, NY, USA","Yonkers, NY
+Nutley, NJ",East Coast,Limited,Extensive,English ,"French, 2",NA,NA,NA,NA,16,No,NA,High school diploma (or equivalent),1,0,1,0,1,1,1,1,1,1,1,1,10
+26,F,Guildford UK ,Guildford UK ,Southern UK ,Moderate,Limited,English ,"English, 5",NA,NA,NA,NA,NA,No,NA,Bachelor's degree,0,1,0,1,1,0,0,0,1,0,1,0,5
+49,m,"Leominster, United States","Leominster, United States",New England,Moderate,Extensive,English,"Spanish, 1",NA,NA,NA,NA,25,No,NA,Doctoral degree,1,1,0,1,0,1,1,0,0,0,0,0,5
+26,Female,"Queens, NY, USA","West Hempstead, NY, USA",Neutral American,Moderate,Moderate,English,"Spanish, 1","Hebrew, 1",NA,NA,NA,3,No,NA,Some graduate school,0,0,0,1,1,0,0,0,0,0,1,1,4
+31,Male,"Queens, NY, USA",NA,"New Yorker, Queens",Negligible,Moderate,English,"Spanish, 1",NA,NA,NA,NA,11,No,NA,Some graduate school,1,1,1,1,1,1,1,0,1,1,1,0,10
+27,Male,"Cincinnati, OH, USA","Hartsville, SC, USA",Eastern US,Moderate,Extensive,English,Spanish - 1,German - 1,NA,NA,NA,12,No,NA,Master's degree,1,1,0,1,1,0,0,1,0,1,1,1,8
+40,Male,"Cali, Colombia","Elmhurst, New York, USA",Not sure,Moderate,Extensive,Spanish,"French, 3","Italian, 1",NA,NA,NA,4,No,NA,Master's degree,0,0,0,1,0,1,0,1,1,0,1,0,5
+25,Female,"Queens, New York, USA","Queens NY, USA/ Managua Nicaragua ",Not so heavy New York City accent ,Moderate,Extensive,English ,"Spanish, 5",NA,NA,NA,NA,NA,No,NA,Bachelor's degree,0,0,0,0,1,0,1,1,0,1,1,0,5
+41,female,Dominican Republic,New York City,Spanish,Moderate,Moderate,Spanish,Spanish=5,NA,NA,NA,NA,3,No,NA,Master's degree,1,1,0,1,1,0,1,0,0,1,0,1,7
+36,Male,"Stoke-on-Trent, UK","Stoke-on-Trent, UK",RP,Extensive,Moderate,English,"French, 3","Italian, 3","Japanese, 2","Tagalog, 1",NA,11,No,NA,Doctoral degree,1,1,0,1,1,0,1,1,1,0,1,1,9
+60,Female,"New York, NY, USA","New York, NY, USA",American,Limited,Extensive,American English,NA,NA,NA,NA,NA,n/a,No,n/a,Master's degree,0,1,1,1,0,1,1,0,1,1,0,1,8
+25,Female,"Banbury, England","Banbury, England",Southern,Moderate,Limited,English,"French, 2",NA,NA,NA,NA,12,No,NA,Master's degree,1,1,0,1,0,0,0,0,1,1,1,0,6
+26,Female,Catanzaro-Italy,Catanzaro-Italy,southern italian/calabrian,Limited,Limited,Italian,"English, 5",NA,NA,NA,NA,10,No,NA,Master's degree,1,0,1,1,0,0,0,0,1,0,0,0,4
+35,Male,"Trondheim, Norway","Trondehim, Norway, Newcastle-under-Lyme, UK, Cambridge, UK",Neutral,Extensive,Moderate,English,"Spanish, 2","French, 1",NA,NA,NA,"learned is a very N. American word, UK would use learnt",No,NA,Some graduate school,1,1,1,1,1,0,1,1,1,0,1,0,9
+32,Female,"White Plains, NY, USA","Port Washington, NY, USA","Light NY, but regionally ambiguous.",Limited,Extensive,English,"French, 1",NA,NA,NA,NA,11 years,No,NA,Some graduate school,1,0,0,1,1,1,0,1,0,1,1,0,7
+56,,"Stamford, UK",Mixed; UK and Germany,,,,English,"French, 4",,,,,11,0,,Undergraduate,1,1,0,,,,,,,,,,2
+72,,"London, UK",Mixed; Southern UK,,,,English,"German, 3"," French, 2"," Norwegian, 1"," Polish, 1",,,0,,PhD,,,,1,0,1,,,,,,,2
+20,,"Barnet, UK","Barnet, UK",,,,English,"Gemran, 1"," Spanish, 1",,,,,0,,Undergraduate,1,,,0,,1,,,,,,,2
+22,,Gibraltar,Gibraltar,,,,English,"Spanish, unknown",,,,,,0,,Master's,1,,,0,,1,,,,,,,2
+40,,"Wellington, NZ","Levin, New Zealand",,,,English,"Japanese, 1",,,,,,0,,PhD,1,,,1,,1,,,,,,,3
+,,"Wisconsin, USA","Wisconsin, USA",,,,English,"Spanish, 3"," German, 1",,,,,0,,Some graduate school,1,,,0,0,,,,,,,,1
+29,,"London, UK","Manchester, UK",,,,English,"French, 1"," German, 2"," Japanese, 1"," Russian, 1",,,0,,Undergraduate,,1,,1,,1,,,,,,,3
+20,,"Milton Keynes, UK",Mixed; Southern UK,,,,English; Russian,"French, 3"," Spanish, 2"," Arabic, 2"," Afrikaans, 2"," Xhosa, 1"," Quenya, 2",0,,Undergraduate,,1,,0,1,,,,,,,,2
+31,,"Boston, USA",Mixed; Northeast USA,,,,English,"Spanish, 3"," French, 1",,,,,0,,Undergraduate,1,,,0,,1,,,,,,,2
+26,,"Haywards Heath, UK","Haywards Heath, UK",,,,English,"French, 2"," Spanish, 1"," Latin, 1",,,,0,,Undergraduate,0,1,,,,1,,,,,,,2
+28,,"Warwickshire, UK","Warwickshire, UK",,,,English,"French, 5"," German, 2",,,,,0,,Master's,1,0,0,,,,,,,,,,1
+28,,"Chelmsford, UK","Chelmsford, UK",,,,English,"German, 3"," French, 1"," Spanish, 1",,,,0,,Undergraduate,,1,0,1,,,,,,,,,2
+49,,"Yeovil, UK","Yeovil, UK",,,,English,"French, 5"," German, 5"," Hungarian, 2"," Italian, 1",,,0,,Master's,1,,,0,,1,,,,,,,2
+18,,"Cambridge, UK","Cambridge, UK",,,,English,,,,,,,0,,Undergraduate,,1,0,0,,,,,,,,,1
+44,,"Torquay, UK","Guildford, UK and Tunbridge Wells, UK",,,,English,NA,,,,,,1,,Master's,,,,1,1,1,,,,,,,3
+31,,"Front Royal, Virginia, USA","Phoenix, Arizona, USA; Wilmington, North Carolina, USA",,,,English,"Spanish, 1"," Portuguese, 1"," Gaelic, 1",,,,0,,PhD,,,,0,1,0,,,,,,,1
+23,,"Richmond, Canada","Victoria, Canada",,,,English; Russian,"French, 4"," Hindi, 3",,,,,0,,Master's,,,,1,1,1,,,,,,,3
+18,,"Zurich, Switzerland","Feusisberg, Switzerland",,,,English; French; German,"Spanish, 4"," Italian, 3"," Swiss German, 3",,,,0,,Undergraduate,,,,1,1,1,,,,,,,3
+31,,"Grand Falls, Canada","Abbotsford, Canada",,,,English,"French, 4",,,,,,0,,Master's,,1,,1,1,,,,,,,,3
+21,,"London, UK","Truro, UK",,,,English,"German, 2"," French, 2"," Japanese, 3",,,,0,,Undergraduate,,0,0,1,,,,,,,,,1
+36,,"London, UK","Gosford, Australia",,,,English,"Spanish, 1"," Japanese, 1"," Gaelic, 1",,,,0,,Undergraduate,1,0,1,,,,,,,,,,2
+22,,"St. Louis, USA","St. Louis, USA",,,,English,"Spanish, 2",,,,,,0,,Master's,,,,1,1,1,,,,,,,3
+19,,"Penang, Malaysia","Penang, Malaysia; San Jose, USA; San Jose, Costa Rica; Hong Kong",,,,English; Mandarin; Hokkien,"Spanish, 3",,,,,,0,,Undergraduate,0,0,1,,,,,,,,,,1
+23,,"Reno, USA","Reno, USA",,,,English; Spanish,"Italian, 3"," French, 2",,,,,0,,Master's,0,0,1,,,,,,,,,,1
+18,,"Melbourne, Australia",Hong Kong,,,,English; Cantonese; Mandarin,"German, 1",,,,,,0,,Undergraduate,,1,,0,1,,,,,,,,2
+21,,"Bury St. Edmunds, Suffolk","Sudbury, Suffolk",,,,English,"French, 3"," German, 2"," Italian, 1",,,,0,,Undergraduate,1,0,1,,,,,,,,,,2
+21,,"Birmingham, UK","Sutton Coldfield, UK",,,,English,,,,,,,0,,Undergraduate,,1,,0,1,,,,,,,,2
+21,,"York, UK","Harrogate, UK",,,,English,"French, 4",,,,,,0,,Undergraduate,1,1,,,,1,,,,,,,3
+21,,"Kottayam, India","Hyderabad, India; Bristol, UK",,,,English; Malayalam; Hindi,"Telugu, 3",,,,,,0,,Undergraduate,,,,0,0,1,,,,,,,1
+21,,"Bath, UK","Bristol, UK",,,,English,"Spanish, 4"," French, 1",,,,,1,,Undergraduate,,,,0,1,1,,,,,,,2
+48,,"Edinburgh, UK","Birmingham, UK",,,,English,"French, 4"," German, 2"," Italian, 2"," Spanish, 1",,,0,,Master's,,,,0,1,0,,,,,,,1
+25,,"Manchester, UK","Manchester, UK",,,,English; German,"Spanish, 2"," French, 1",,,,,0,,PhD,,,,0,0,1,,,,,,,1
+28,,"Weston-Super-Mare, UK","Horsham, UK",,,,English,"French, 3"," Spanish, 1",,,,,0,,Master's,1,1,,,1,,,,,,,,3
+30,,"Suffolk, UK","Suffolk, UK",,,,English,"Cantonese, 4"," Spanish, 3"," French, 3"," Latin, 2",,,0,,PhD,0,1,,,1,,,,,,,,2
+20,,"Slough, UK","Slough, UK",,,,English,"French, 3",,,,,,0,,Undergraduate,1,1,,,1,,,,,,,,3
+20,,"Stevenage, UK","Letchworth, UK",,,,English,"French, 1",,,,,,0,,Undergraduate,1,1,,,1,,,,,,,,3
+18,,Singapore,Singapore,,,,English; Mandarin,"Dutch, 2",,,,,,0,,Undergraduate,1,1,,,1,,,,,,,,3
+20,,"Plymouth, UK","Bude, UK",,,,English,"French, 5"," Italian, 3"," Russian, 3"," Spanish, 2",,,0,,Undergraduate,1,0,,,1,,,,,,,,2
+18,,"Northallerton, UK","Billingham, UK ",,,,English,"French, 4"," Spanish, 4"," German, 3"," Arabic, 1",,,0,,Undergraduate,1,1,,,1,,,,,,,,3
+21,,"Curitiba, Brazil","Petersfield, UK",,,,English; French; Portuguese,"Spanish, 5",,,,,,1,,Undergraduate,,,,1,1,1,,,,,,,3
+18,,"Reston, USA","Belfast, Northern Ireland",,,,English,"Irish, 2",,,,,,0,,Undergraduate,0,1,,,0,,,,,,,,1
+19,,"Chorley, UK","Chorley, UK",,,,English,"Welsh, 3"," German, 2"," Spanish, 1",,,,0,,Undergraduate,1,,,0,,1,,,,,,,2
+19,,"London, UK",Mixed,,,,English,"German, 5"," French, 2"," Russian, 1",,,,,,Undergraduate,1,1,,,1,,,,,,,,3
+22,,"London, UK","Hertfordshire, UK",,,,English,NA,,,,,,0,,Master's,1,1,,,1,,,,,,,,3
+32,,"Ormskirk, UK","Newcastle upon Tyne, UK",,,,English,"French, 2",,,,,,0,,PhD,1,1,,,,1,,,,,,,3
+18,,"Bath, UK","Bath, UK",,,,English,"Spanish, 2"," French, 1",,,,,0,,Undergraduate,1,,,,1,1,,,,,,,3
+20,,"London, UK","London, UK",,,,English,"French, 3"," Spanish, 4"," Mandarin, 2",,,,0,,Undergraduate,,,,1,0,1,,,,,,,2
+26,,"North York, Canada","Richmond Hill, Canada",,,,English; Cantonese,"French, 4"," Mandarin, 3",,,,,0,,Master's,,,,0,0,0,,,,,,,0

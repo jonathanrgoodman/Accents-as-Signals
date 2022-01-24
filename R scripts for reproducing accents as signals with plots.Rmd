@@ -1,0 +1,426 @@
+---
+title: "R scripts for reproducing accents as signals study"
+output: html_notebook
+author: "Jonathan R Goodman, Enrico Crema"
+---
+
+# Load libraries
+```{r}
+library(brms)
+library(tidyr)
+library(ggplot2)
+library(ggridges)
+```
+
+# Utility function
+
+Inverse logit function for converting fitted models into binomial probabilities
+```{r}
+logistic <- function (x) 
+{
+  p <- 1/(1 + exp(-x))
+  p <- ifelse(x == Inf, 1, p)
+  p
+}
+
+```
+
+
+# Experiment 1
+
+```{r}
+load("./updated-initial-mimicry-data.RData")
+initial.mimicry.data <- initial.mimicry.data[which(!is.na(initial.mimicry.data$Correct)),]
+bprior <- bprior <- c(prior_string("normal(0,1)", class = "b"))
+experiment1.fitb <- brm(Correct~(Try-1)+(1|Participant), prior=bprior, data=initial.mimicry.data, family="bernoulli") # this will take longer than glmer
+summary(experiment1.fitb) 
+```
+
+
+```{r}
+experiment1.fit <- glmer(Correct~(Try-1)+(1|Participant), data=initial.mimicry.data, family="binomial") 
+summary(experiment1.fit)
+```
+
+```{r}
+prior_summary(experiment1.fitb)
+```
+
+
+```{r}
+#posterior predictive check
+
+pp_check(experiment1.fitb)
+```
+
+```{r}
+# Extract MCMC samples
+experiment1.fitb.post <- posterior_samples(experiment1.fitb)
+
+# Compute CI in after conversion into probability 
+quantile(logistic(experiment1.fitb.post$b_TryTry1),c(0.025,0.975))
+quantile(logistic(experiment1.fitb.post$b_TryTry4),c(0.025,0.975))
+
+# Compute the CI of the *difference* betweeb the two tries
+quantile(logistic(experiment1.fitb.post$b_TryTry4)-logistic(experiment1.fitb.post$b_TryTry1),c(0.025,0.975))
+```
+
+
+```{r}
+hist(logistic(experiment1.fitb.post$b_TryTry4)-logistic(experiment1.fitb.post$b_TryTry1))
+```
+
+
+```{r}
+experiment1.fitb.post.long = pivot_longer(experiment1.fitb.post,cols=c(b_TryTry1,b_TryTry4))
+experiment1.fitb.post.long$value = logistic(experiment1.fitb.post.long$value)
+
+
+ggplot(experiment1.fitb.post.long, aes(x = value, y = name, fill = factor(stat(quantile)))) +
+  stat_density_ridges(
+    geom = "density_ridges_gradient",
+    calc_ecdf = TRUE,
+    quantiles = c(0.025, 0.975),
+    show.legend = FALSE,
+    scale = 2,
+    alpha = 0.7
+  ) +
+  scale_y_discrete(labels = c('One','Four')) +
+  scale_fill_manual(name = "Posterior Probability", values = c("lightgrey", "lightblue", "lightgrey"),) +
+  xlab("Probability") + ylab("Try Number") +
+  theme_ridges()
+```
+
+# Experiment 2
+
+```{r}
+load("./mimicry-analyses.RData")
+
+# convert to actual numbers
+data.amal.long$Correct <- as.numeric(data.amal.long$Correct)-1
+data.amal.long <- data.amal.long[!is.na(data.amal.long$Correct),]
+```
+
+Model for overall probability of success
+
+```{r}
+iprior <- c(prior_string("normal(0,5)", class = "Intercept"))
+experiment2.fit1 <- brm(Correct~1+(1|Participant), prior=iprior, data=data.amal.long, family=bernoulli)
+experiment2.fit1.post <- posterior_samples(experiment2.fit1)
+
+```
+
+```{r}
+summary(experiment2.fit1)
+quantile(logistic(experiment2.fit1.post$b_Intercept),c(0.025,0.975))
+```
+
+
+```{r}
+bprior <- bprior <- c(prior_string("normal(0,5)", class = "b"))
+experiment2.fit1b <- brm(Correct~(Raised.General-1)+(1|Participant), prior=bprior, data=data.amal.long, family=bernoulli)
+experiment2.fit1b.post <- posterior_samples(experiment2.fit1b)
+
+```
+
+```{r}
+summary(experiment2.fit1b)
+
+quantile(logistic(experiment2.fit1b.post$b_Raised.GeneralBritishIsles),c(0.025,0.975))
+quantile(logistic(experiment2.fit1b.post$b_Raised.GeneralNorthAmerica),c(0.025,0.975))
+quantile(logistic(experiment2.fit1b.post$b_Raised.GeneralRestoftheWorld),c(0.025,0.975))
+```
+
+```{r}
+#posterior predictive check
+
+pp_check(experiment2.fit1b)
+```
+
+plotting out experiment 2 fit 1b
+
+```{r}
+experiment2.fit1b.post.long <- pivot_longer(experiment2.fit1b.post,cols=c(b_Raised.GeneralBritishIsles,b_Raised.GeneralNorthAmerica,b_Raised.GeneralRestoftheWorld))
+experiment2.fit1b.post.long$value <- logistic(experiment2.fit1b.post.long$value)
+
+ggplot(experiment2.fit1b.post.long, aes(x = value, y = name, fill = factor(stat(quantile)))) +
+  stat_density_ridges(
+    geom = "density_ridges_gradient",
+    calc_ecdf = TRUE,
+    quantiles = c(0.025, 0.975),
+    show.legend = FALSE,
+    scale = 2,
+    alpha = 0.7
+  ) +
+  scale_y_discrete(labels = c('British Isles','North America','Rest of the World')) +
+  scale_fill_manual(name = "Posterior Probability", values = c("lightgrey", "lightblue", "lightgrey"),) +
+  xlab("Probability") + ylab("General area raised") +
+  theme_ridges()
+```
+
+
+```{r}
+experiment2.fit2b <- brm(Correct~Mimicry.Score+(1|Participant), prior=bprior, data=data.amal.long, family=bernoulli)
+summary(experiment2.fit2b)
+quantile(logistic(experiment2.fit2b.post$b_Mimicry.Score),c(0.025,0.975))
+```
+
+```{r}
+#posterior predictive check
+
+pp_check(experiment2.fit2b)
+```
+
+
+```{r}
+experiment2.fit3.b <- brm(Correct~Listener.Speaker.Match+(1|Participant), prior=bprior, data=data.amal.long, family=bernoulli)
+experiment2.fit3.post <- posterior_samples(experiment2.fit3.b)
+
+quantile(logistic(experiment2.fit3.post$b_Intercept),prob=c(0.025,0.975)) # Intercept Posterior i.e. when Listener.Speaker.Match=0
+quantile(logistic(experiment2.fit3.post$b_Intercept+experiment2.fit3.post$b_Listener.Speaker.Match),prob=c(0.025,0.975)) # Posterior when b_Listener.Speaker.Match=1
+quantile(logistic(experiment2.fit3.post$b_Intercept) - logistic(experiment2.fit3.post$b_Intercept+experiment2.fit3.post$b_Listener.Speaker.Match),prob=c(0.025,0.975)) #Posterior difference in probability of correct answer
+```
+
+
+```{r}
+summary(experiment2.fit3.b)
+```
+
+```{r}
+pp_check(experiment2.fit3.b)
+```
+
+
+plotting model
+```{r}
+
+experiment2.fit3.post$LSM <- experiment2.fit3.post$b_Intercept+experiment2.fit3.post$b_Listener.Speaker.Match
+
+experiment2.fit3.post.long <- pivot_longer(experiment2.fit3.post,cols=c(b_Intercept,LSM))
+experiment2.fit3.post.long$value <- logistic(experiment2.fit3.post.long$value)
+
+ggplot(experiment2.fit3.post.long, aes(x = value, y = name, fill = factor(stat(quantile)))) +
+  stat_density_ridges(
+    geom = "density_ridges_gradient",
+    calc_ecdf = TRUE,
+    quantiles = c(0.025, 0.975),
+    show.legend = FALSE,
+    scale = 2,
+    alpha = 0.7
+  ) +
+  scale_y_discrete(labels = c("No","Yes")) +
+  scale_fill_manual(name = "Posterior Probability", values = c("lightgrey", "lightblue", "lightgrey"),) +
+  xlab("Probability") + ylab("Listener-Speaker Match") +
+  theme_ridges()
+```
+
+
+```{r}
+experiment2.fit4b <- brm(Correct~Raised.Accent.Match+(1|Participant), prior=bprior, data=data.amal.long, family=bernoulli)
+experiment2.fit4.post <- posterior_samples(experiment2.fit4b)
+
+quantile(logistic(experiment2.fit4.post$b_Intercept),prob=c(0.025,0.975)) # Intercept Posterior
+quantile(logistic(experiment2.fit4.post$b_Intercept+experiment2.fit4.post$b_Raised.Accent.Match),prob=c(0.025,0.975))  # Posterior when b_Raised.Accent.Match=1
+quantile(logistic(experiment2.fit4.post$b_Intercept) - logistic(experiment2.fit4.post$b_Intercept+experiment2.fit4.post$b_Raised.Accent.Match),prob=c(0.025,0.975)) #Posterior difference in probability of correct answer
+```
+
+```{r}
+summary(experiment2.fit4b)
+pp_check(experiment2.fit4b)
+```
+
+
+
+```{r}
+experiment2.fit5b <- brm(Correct~ (Raised.General-1) * Listener.Speaker.Match + (1|Participant), prior=bprior, data=data.amal.long, family=bernoulli)
+summary(experiment2.fit5b)
+
+experiment2.fit5.post <- posterior_samples(experiment2.fit5b)[,1:7]
+
+```
+
+```{r}
+pp_check(experiment2.fit5b)
+```
+
+
+```{r}
+#British Isle, No Listener Speaker Match
+quantile(logistic(experiment2.fit5.post$b_Raised.GeneralBritishIsles),c(0.025,0.975))
+
+#British Isle, Listener Speaker Match
+quantile(logistic(experiment2.fit5.post$b_Raised.GeneralBritishIsles+experiment2.fit5.post$b_Listener.Speaker.Match),c(0.025,0.975))
+
+#NorthAmerica, No Listener Speaker Match
+quantile(logistic(experiment2.fit5.post$b_Raised.GeneralNorthAmerica),c(0.025,0.975))
+
+#NorthAmerica, Listener Speaker Match
+quantile(logistic(experiment2.fit5.post$`b_Raised.GeneralNorthAmerica`+experiment2.fit5.post$`b_Listener.Speaker.Match`+experiment2.fit5.post$`b_Raised.GeneralNorthAmerica:Listener.Speaker.Match`),c(0.025,0.975))
+
+#RestoftheWorld, No Listener Speaker Match
+quantile(logistic(experiment2.fit5.post$b_Raised.GeneralRestoftheWorld),c(0.025,0.975))
+
+#RestoftheWorld, Listener Speaker Match
+quantile(logistic(experiment2.fit5.post$`b_Raised.GeneralRestoftheWorld`+experiment2.fit5.post$`b_Listener.Speaker.Match`+experiment2.fit5.post$`b_Raised.GeneralRestoftheWorld:Listener.Speaker.Match`),c(0.025,0.975))
+
+```
+
+plotting model
+
+```{r}
+experiment2.fit5.post$Raised.General.BI.LSM <- experiment2.fit5.post$b_Raised.GeneralBritishIsles+experiment2.fit5.post$b_Listener.Speaker.Match
+
+experiment2.fit5.post$Raised.General.NA.LSM <- experiment2.fit5.post$`b_Raised.GeneralNorthAmerica`+experiment2.fit5.post$`b_Listener.Speaker.Match`+experiment2.fit5.post$`b_Raised.GeneralNorthAmerica:Listener.Speaker.Match`
+
+experiment2.fit5.post$Raised.General.RW.LSM <- experiment2.fit5.post$`b_Raised.GeneralRestoftheWorld`+experiment2.fit5.post$`b_Listener.Speaker.Match`+experiment2.fit5.post$`b_Raised.GeneralRestoftheWorld:Listener.Speaker.Match`
+
+
+experiment2.fit5.post.long <- pivot_longer(experiment2.fit5.post,cols=c(b_Raised.GeneralBritishIsles,Raised.General.BI.LSM,b_Raised.GeneralNorthAmerica,Raised.General.NA.LSM,b_Raised.GeneralRestoftheWorld,Raised.General.RW.LSM))
+experiment2.fit5.post.long$value <- logistic(experiment2.fit5.post.long$value)
+
+ggplot(experiment2.fit5.post.long, aes(x = value, y = name, fill = factor(stat(quantile)))) +
+  stat_density_ridges(
+    geom = "density_ridges_gradient",
+    calc_ecdf = TRUE,
+    quantiles = c(0.025, 0.975),
+    show.legend = FALSE,
+    scale = 2,
+    alpha = 0.7
+  ) +
+  scale_y_discrete(labels = c("British Isles, No","British Isles, Yes","North America, No","North America, Yes","Rest of the World, No","Rest of the World, Yes")) +
+  scale_fill_manual(name = "Posterior Probability", values = c("lightgrey", "lightblue", "lightgrey"),) +
+  xlab("Probability") + ylab("Region and Listener-Speaker Match") +
+  theme_ridges()
+```
+
+
+
+```{r}
+
+# there are no Rest of the World Partecipants with Raised Accent Match ==1 so dropping the level
+data.amal.long2 <- subset(data.amal.long, Raised.General!='Rest of the World')
+data.amal.long2$Raised.General = as.character(data.amal.long2$Raised.General)
+
+experiment2.fit6b <- brm(Correct~ (Raised.General-1) * Raised.Accent.Match +(1|Participant), prior=bprior, data=data.amal.long2, family=bernoulli)
+summary(experiment2.fit6b)
+experiment2.fit6.post <- posterior_samples(experiment2.fit6b)
+
+```
+
+```{r}
+pp_check(experiment2.fit6b)
+```
+
+
+```{r}
+#British Isle, No Raised.Accent.Match
+quantile(logistic(experiment2.fit6.post$b_Raised.GeneralBritishIsles),c(0.025,0.975))
+
+#British Isle, Raised.Accent.Match
+quantile(logistic(experiment2.fit6.post$b_Raised.GeneralBritishIsles+experiment2.fit6.post$b_Raised.Accent.Match),c(0.025,0.975))
+
+#NorthAmerica, No Raised.Accent.Match
+quantile(logistic(experiment2.fit6.post$b_Raised.GeneralNorthAmerica),c(0.025,0.975))
+
+#NorthAmerica, Raised.Accent.Match
+quantile(logistic(experiment2.fit6.post$`b_Raised.GeneralNorthAmerica`+experiment2.fit6.post$`b_Raised.Accent.Match`+experiment2.fit6.post$`b_Raised.GeneralNorthAmerica:Raised.Accent.Match`),c(0.025,0.975))
+
+```
+
+plotting model
+
+```{r}
+experiment2.fit6.post$Raised.General.BI.RAM <- experiment2.fit6.post$b_Raised.GeneralBritishIsles+experiment2.fit6.post$b_Raised.Accent.Match
+
+experiment2.fit6.post$Raised.General.NA.RAM <- experiment2.fit6.post$`b_Raised.GeneralNorthAmerica`+experiment2.fit6.post$`b_Raised.Accent.Match`+experiment2.fit6.post$`b_Raised.GeneralNorthAmerica:Raised.Accent.Match`
+
+
+experiment2.fit6.post.long <- pivot_longer(experiment2.fit6.post,cols=c(b_Raised.GeneralBritishIsles,Raised.General.BI.RAM,b_Raised.GeneralNorthAmerica,Raised.General.NA.RAM))
+experiment2.fit6.post.long$value <- logistic(experiment2.fit6.post.long$value)
+
+ggplot(experiment2.fit6.post.long, aes(x = value, y = name, fill = factor(stat(quantile)))) +
+  stat_density_ridges(
+    geom = "density_ridges_gradient",
+    calc_ecdf = TRUE,
+    quantiles = c(0.025, 0.975),
+    show.legend = FALSE,
+    scale = 2,
+    alpha = 0.7
+  ) +
+  scale_y_discrete(labels = c("British Isles, No","British Isles, Yes","North America, No","North America, Yes")) +
+  scale_fill_manual(name = "Posterior Probability", values = c("lightgrey", "lightblue", "lightgrey"),) +
+  xlab("Probability") + ylab("Region and Listener-Accent Match") +
+  theme_ridges()
+```
+```{r}
+#Evaluate detection in experiment 2 by quality of fake according to scoring system in experiment 1
+
+experiment2.questions <- data.frame(Q=c(1:12), Fake.quality=c(100,80,60,"Not Fake","Not Fake",100,"Not Fake",87.5,80,"Not Fake","Not Fake","Not Fake"))
+experiment2.questions$Fake.quality <- factor(experiment2.questions$Fake.quality, levels=c("Not Fake",60,80,87.5,100))
+
+data.amal.long.temp$Fake.quality <- rep(experiment2.questions$Fake.quality, 147)
+
+# convert to actual numbers
+data.amal.long.temp$Correct <- as.numeric(data.amal.long.temp$Correct)-1
+data.amal.long <- data.amal.long.temp[!is.na(data.amal.long.temp$Correct),]
+
+```
+
+```{r}
+experiment2.fit7 <- brm(Correct~(Fake.quality-1)+(1|Participant), prior=bprior, data=data.amal.long, family=bernoulli)
+experiment2.fit7.post <- posterior_samples(experiment2.fit7)
+summary(experiment2.fit7)
+```
+
+```{r}
+pp_check(experiment2.fit7)
+```
+
+
+```{r}
+#evaluating divergences
+
+pairs(experiment2.fit7, las = 1)
+```
+
+```{r}
+#confidence intervals
+
+#Not Fake
+quantile(logistic(experiment2.fit7.post$b_Fake.qualityNotFake),c(0.025,0.975))
+
+#60
+quantile(logistic(experiment2.fit7.post$b_Fake.quality60),c(0.025,0.975))
+
+#80
+quantile(logistic(experiment2.fit7.post$b_Fake.quality80),c(0.025,0.975))
+
+#87.5
+quantile(logistic(experiment2.fit7.post$b_Fake.quality87.5),c(0.025,0.975))
+
+#100
+quantile(logistic(experiment2.fit7.post$b_Fake.quality100),c(0.025,0.975))
+
+```
+
+```{r}
+#plotting
+
+experiment2.fit7.post.long <- pivot_longer(experiment2.fit7.post,cols=c(b_Fake.qualityNotFake,b_Fake.quality60,b_Fake.quality80,b_Fake.quality87.5,b_Fake.quality100))
+experiment2.fit7.post.long$value <- logistic(experiment2.fit7.post.long$value)
+
+ggplot(experiment2.fit7.post.long, aes(x = value, y = name, fill = factor(stat(quantile)))) +
+  stat_density_ridges(
+    geom = "density_ridges_gradient",
+    calc_ecdf = TRUE,
+    quantiles = c(0.025, 0.975),
+    show.legend = FALSE,
+    scale = 2,
+    alpha = 0.7
+  ) +
+  scale_y_discrete(labels = c("Genuine speaker","60% correct","80% correct","87.5% correct","100% correct")) +
+  scale_fill_manual(name = "Posterior Probability", values = c("lightgrey", "lightblue", "lightgrey"),) +
+  xlab("Probability") + ylab("Quality of mimicry") +
+  theme_ridges()
+```
+

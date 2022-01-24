@@ -1,0 +1,50 @@
+﻿Participant,Try 1 total,Try 4 total,Age,Place of birth,Place raised,Raised in multiple places?,Familiarity with accents,Number of native languages,Native languages,Number of other languages,Other languages; proficiency (1-5),Age started learning L2+,Trained voice actor?,Highest education,Mimicry style
+1,57.00,58.00,56,"Stamford, UK",Mixed; UK and Germany,1,a,1,English,1,"French, 4",11,0,Undergraduate,e
+2,30.00,24.00,72,"London, UK",Mixed; Southern UK,1,a,1,English,4,"German, 3; French, 2; Norwegian, 1; Polish, 1",11,0,PhD,a
+3,60.00,56.00,20,"Barnet, UK","Barnet, UK",0,a,1,English,2,"Gemran, 1; Spanish, 1",,0,Undergraduate,b
+4,56.00,62.00,22,Gibraltar,Gibraltar,0,b,1,English,1,"Spanish, unknown",4,0,Master's,e
+5,46.00,52.00,40,"Wellington, NZ","Levin, New Zealand",0,b,1,English,0,"Japanese, 1",13,0,PhD,b
+6,58.00,63.00,,"Wisconsin, USA","Wisconsin, USA",0,c,1,English,2,"Spanish, 3; German, 1",10,0,Some graduate school,c
+7,54.00,62.00,29,"London, UK","Manchester, UK",0,a,1,English,4,"French, 1; German, 2; Japanese, 1; Russian, 1",13,0,Undergraduate,e
+9,66.00,61.00,20,"Milton Keynes, UK",Mixed; Southern UK,1,b,2,English; Russian,6,"French, 3; Spanish, 2; Arabic, 2; Afrikaans, 2; Xhosa, 1; Quenya, 2",0,0,Undergraduate,e
+11,58.00,56.00,31,"Boston, USA",Mixed; Northeast USA,1,c,1,English,2,"Spanish, 3; French, 1",,0,Undergraduate,c
+13,65.00,0.00,26,"Haywards Heath, UK","Haywards Heath, UK",0,b,1,English,3,"French, 2; Spanish, 1; Latin, 1",,0,Undergraduate,e
+15,65.00,65.00,28,"Warwickshire, UK","Warwickshire, UK",0,a,1,English,2,"French, 5; German, 2",3,0,Master's,a
+17,62.00,0.00,28,"Chelmsford, UK","Chelmsford, UK",0,b,1,English,3,"German, 3; French, 1; Spanish, 1",,0,Undergraduate,c
+18,75.00,74.00,49,"Yeovil, UK","Yeovil, UK",0,a,1,English,4,"French, 5; German, 5; Hungarian, 2; Italian, 1",11,0,Master's,b
+19,64.00,58.00,26,"North York, Canada","Richmond Hill, Canada",0,c,2,English; Cantonese,2,"French, 4; Mandarin, 3",0,0,Master's,c
+21,69.00,70.00,18,"Cambridge, UK","Cambridge, UK",0,b,1,English,0,,,0,Undergraduate,e
+25,73.00,70.00,44,"Torquay, UK","Guildford, UK and Tunbridge Wells, UK",1,b,1,English,0,NA,NA,1,Master's,b
+26,52.00,56.00,31,"Front Royal, Virginia, USA","Phoenix, Arizona, USA; Wilmington, North Carolina, USA",1,c,1,English,3,"Spanish, 1; Portuguese, 1; Gaelic, 1",,0,PhD,c
+28,57.00,49.00,23,"Richmond, Canada","Victoria, Canada",0,d,2,English; Russian,2,"French, 4; Hindi, 3",0,0,Master's,c
+29,71.00,68.00,18,"Zurich, Switzerland","Feusisberg, Switzerland",0,b,3,English; French; German,3,"Spanish, 4; Italian, 3; Swiss German, 3",6,0,Undergraduate,c
+31,49.00,54.00,31,"Grand Falls, Canada","Abbotsford, Canada",0,b,1,English,1,"French, 4",5,0,Master's,b
+32,59.00,62.00,21,"London, UK","Truro, UK",0,c,1,English,3,"German, 2; French, 2; Japanese, 3",0,0,Undergraduate,c
+33,63.00,0.00,36,"London, UK","Gosford, Australia",0,b,1,English,3,"Spanish, 1; Japanese, 1; Gaelic, 1",7,0,Undergraduate,b
+34,58.00,52.00,22,"St. Louis, USA","St. Louis, USA",0,c,1,English,1,"Spanish, 2",19,0,Master's,e
+35,44.00,0.00,19,"Penang, Malaysia","Penang, Malaysia; San Jose, USA; San Jose, Costa Rica; Hong Kong",1,b,3,English; Mandarin; Hokkien,1,"Spanish, 3",0,0,Undergraduate,
+37,53.00,51.00,23,"Reno, USA","Reno, USA",0,c,2,English; Spanish,2,"Italian, 3; French, 2",0,0,Master's,
+38,55.00,0.00,18,"Melbourne, Australia",Hong Kong,0,b,3,English; Cantonese; Mandarin,1,"German, 1",0,0,Undergraduate,c
+39,54.00,51.00,21,"Bury St. Edmunds, Suffolk","Sudbury, Suffolk",0,b,1,English,3,"French, 3; German, 2; Italian, 1",7,0,Undergraduate,e
+40,77.00,0.00,21,"Birmingham, UK","Sutton Coldfield, UK",0,a,1,English,0,,,0,Undergraduate,b
+41,54.00,54.00,21,"York, UK","Harrogate, UK",0,a,1,English,1,"French, 4",0,0,Undergraduate,b
+43,58.00,63.00,21,"Kottayam, India","Hyderabad, India; Bristol, UK",1,a,3,English; Malayalam; Hindi,1,"Telugu, 3",0,0,Undergraduate,e
+48,65.00,64.00,21,"Bath, UK","Bristol, UK",0,b,1,English,2,"Spanish, 4; French, 1",11,1,Undergraduate,e
+49,44.00,0.00,47,"Cambridge, Canada","Johannesburg, South Africa",0,b,2,English; Slovak,1,"Afrikaans, 4",10,0,College diploma,b
+52,49.00,0.00,48,"Edinburgh, UK","Birmingham, UK",0,a,1,English,4,"French, 4; German, 2; Italian, 2; Spanish, 1",11,0,Master's,b
+54,61.00,69.00,25,"Manchester, UK","Manchester, UK",0,a,2,English; German,2,"Spanish, 2; French, 1",0,0,PhD,b
+58,59.00,0.00,28,"Weston-Super-Mare, UK","Horsham, UK",0,b,1,English,2,"French, 3; Spanish, 1",7,0,Master's,c
+59,59.00,61.00,30,"Suffolk, UK","Suffolk, UK",0,b,1,English,4,"Cantonese, 4; Spanish, 3; French, 3; Latin, 2",0,0,PhD,b
+60,65.00,66.00,20,"Slough, UK","Slough, UK",0,b,1,English,1,"French, 3",10,0,Undergraduate,e
+61,66.00,61.00,20,"Stevenage, UK","Letchworth, UK",0,b,1,English,1,"French, 1",10,0,Undergraduate,b
+62,36.00,36.00,18,Singapore,Singapore,0,b,2,English; Mandarin,1,"Dutch, 2",3,0,Undergraduate,c
+63,65.00,66.00,20,"Plymouth, UK","Bude, UK",0,a,1,English,4,"French, 5; Italian, 3; Russian, 3; Spanish, 2",11,0,Undergraduate,b
+64,65.00,71.00,18,"Northallerton, UK","Billingham, UK ",0,a,1,English,4,"French, 4; Spanish, 4; German, 3; Arabic, 1",11,0,Undergraduate,a
+65,69.00,63.00,21,"Curitiba, Brazil","Petersfield, UK",0,b,3,English; French; Portuguese,1,"Spanish, 5",0,1,Undergraduate,e
+66,56.00,61.00,18,"Reston, USA","Belfast, Northern Ireland",0,b,1,English,1,"Irish, 2",11,0,Undergraduate,d
+67,61.00,63.00,19,"Chorley, UK","Chorley, UK",0,a,1,English,3,"Welsh, 3; German, 2; Spanish, 1",11,0,Undergraduate,b
+68,64.00,69.00,19,"London, UK",Mixed,1,b,1,English,3,"German, 5; French, 2; Russian, 1",7,,Undergraduate,e
+69,44.00,50.00,22,"London, UK","Hertfordshire, UK",0,a,1,English,0,NA,NA,0,Master's,a
+70,66.00,66.00,32,"Ormskirk, UK","Newcastle upon Tyne, UK",0,a,1,English,1,"French, 2",11,0,PhD,b
+71,71.00,71.00,18,"Bath, UK","Bath, UK",0,b,1,English,2,"Spanish, 2; French, 1",6,0,Undergraduate,c
+72,61.00,60.00,20,"London, UK","London, UK",0,b,1,English,3,"French, 3; Spanish, 4; Mandarin, 2",,0,Undergraduate,e
